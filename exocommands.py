@@ -6,6 +6,7 @@ command_times = {
     32: Commands.SIT_DOWN,
     47: Commands.STAND_UP,
     58: Commands.WALK_LEFT,
-    122: Commands.STOP,
-    138: Commands.SIT_DOWN
+    70: Commands.WALK_RIGHT,
+    82: Commands.STOP,
+    108: Commands.SIT_DOWN
 }
