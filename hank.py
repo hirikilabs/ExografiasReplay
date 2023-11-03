@@ -18,13 +18,13 @@ class Commands:
 
 # class defining the bytes we need to send over serial for each command
 class SerialCommands:
-    STOP = [144]
-    STEP_LEFT = [169, 98]
-    STEP_RIGHT = [169, 96]
-    WALK_LEFT = [166, 160]
-    WALK_RIGHT = [166, 161]
-    STAND_UP = [208]
-    SIT_DOWN = [224]
+    STOP = [0x90]
+    STEP_LEFT = [0xA9, 0x62]
+    STEP_RIGHT = [0xA9, 0x60]
+    WALK_LEFT = [0xA6, 0xA0]
+    WALK_RIGHT = [0xA6, 0xA1]
+    STAND_UP = [0xD0]
+    SIT_DOWN = [0xE0]
 
 
 # class to interact with the exo
