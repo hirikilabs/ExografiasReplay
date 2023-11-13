@@ -17,7 +17,7 @@ def usage():
 
 
 def launch_video(video_file):
-    subprocess.Popen(["/usr/bin/mpv", video_file], stdout=subprocess.DEVNULL,
+    subprocess.Popen(["/usr/bin/mpv", "--fs", video_file], stdout=subprocess.DEVNULL,
                      stderr=subprocess.DEVNULL)
 
 
