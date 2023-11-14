@@ -17,7 +17,10 @@ def usage():
 
 
 def launch_video(video_file):
-    subprocess.Popen(["/usr/bin/mpv", "--fs", video_file], stdout=subprocess.DEVNULL,
+    # first kill mpv (launched with keep-open)
+    subprocess.Popen(["killall", "mpv"])
+    # and launch it agin
+    subprocess.Popen(["/usr/bin/mpv", "--keep-open=yes", "--fs", video_file], stdout=subprocess.DEVNULL,
                      stderr=subprocess.DEVNULL)
 
 
